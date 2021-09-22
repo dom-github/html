@@ -1,1 +1,59 @@
-<!-- ...crickets... -->
+<DOCTYPE=html>
+<html>
+    <body>
+        <form>
+            <h1>Registration form</h1>
+                <!--User login/info-->
+                <label for="username">Username:</label> 
+                <input type="text" name="username" id="username" required/>
+
+                <label for="password">Password:</label> 
+                <input type="password" name="password" id="password" required/>
+
+                <label for="email">Email:</label> 
+                <input type="email" name="email" id="email" required/>
+            
+            <!--Taxi type select-->
+            <h3>Which taxi do you require?</h3>
+                <input type="radio" name="taxitype" id="car" value="car" required/>
+                <label for="car">Car</label>
+
+                <input type="radio" name="taxitype" id="van" value="van" />
+                <label for="van">Van</label>
+
+                <input type="radio" name="taxitype" id="tuktuk" value="tuktuk" />
+                <label for="tuktuk">Tuk tuk</label>
+
+            <!--Extras-->
+            <h3>Choose your extras</h3>
+                <input type="checkbox" id="babyseat" name="babyseat" >
+                <label for="babyseat">Baby seat</label>
+
+                <input type="checkbox" id="wheelchair" name="wheelchair" >
+                <label for="wheelchair">Wheelchair access</label>
+
+                <input type="checkbox" id="privwindow" name="privwindow" >
+                <label for="privwindow">Privacy windows</label>
+
+            <!--Pickup location-->
+            <h3>Where would you like us to pick you up?</h3>
+                <label for="pickups">Pickup Location: </label>
+
+                <select name="pickups" id="pickups">
+                    <option value="home">Select One</option>
+                    <option value="home">Home</option>
+                    <option value="work">Work</option>
+                    <option value="daycare">Daycare</option>
+                    <option value="jail">Jail</option>
+                </select>
+
+            <!--Additional Instructions-->
+            <h3>Additional Instructions</h3>
+                <label for="special">Special</label>
+                <textarea id="special" name="special">provide special instructions here
+                </textarea>
+                <!--Submit form-->
+                <input type="submit"/>
+        </form>
+    </body>
+</html>
